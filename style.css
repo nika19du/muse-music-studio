@@ -216,121 +216,7 @@ html, body {
             margin:auto;
         }
     }
-/* info section style */
-.content-info { 
-    background-image:url(images/studio-musicmaker-1.webp);
-    background-repeat: no-repeat, repeat;
-    background-size: cover;
-    box-shadow: 0 1px 5px rgba(104,104,104,0.8);
-    display: grid;
-    overflow:hidden;
-    grid-gap: 30px;
-    /* grid-template-columns: repeat(2,1fr); */
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-    padding: 3rem;
-    max-width:100%;
-    height:50vh;
-}
-.info{ 
-    display:grid;
-    align-items: center; 
-    position:absolute;
-    width:90%;
-}
-.info-wrapper{
-    display:flex;
-    flex-direction: column;
-    justify-items:flex-end;
-    align-items: flex-end;  
-    position:relative;
-    text-align: end;
-}
-.info-title{     
-    padding:20px;
-    font-size: 34px;
-    line-height: 22px;
-    margin: 10px 70px;
-
-    color:#ffd754;
-}
-.info-data{
-    font-size: 18px;
-    width:26%;
-    margin: 10px 90px;
-    color:#a07ac1;
-}
-@media (max-width: 720px){
-    .content-info { 
-        background-image:url(images/studio-musicmaker-1.webp);
-        background-position: -100px  ;  
-        background-size: cover;
-        box-shadow: 0 1px 5px rgba(104,104,104,0.8);
-        display: grid;
-        overflow:hidden;
-        grid-gap: 30px; 
-        grid-template-columns: repeat(2,1fr);
-        /* grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); */
-        padding: 3rem;
-        max-width:100%;
-        height:50vh;
-        flex-shrink: 1;
-    }
-    .info-title{     
-        padding:10px;
-        width:34%;
-        text-align: center;
-        font-size: 31px;
-        line-height: 35px;
-        margin: 10px 46px; 
-        color:#ffd754; 
-    }
-    .info-data{ 
-        width:30%;  
-        font-size: 18px;   
-        color:#a07ac1;
-    }
-    .info-wrapper{
-        align-items: end;
-        width:100%; 
-    }
-} 
-@media (max-width: 580px){ 
-    .content-info { 
-        width:100%;
-       flex-shrink: 2;
-
-    }
-    .info-title{    
-        text-align: center;
-
-        padding:10px;
-        width:24%;
-        font-size:36px;
-        line-height:33px;
-        font-weight: bold;
-        margin: 10px 30px; 
-        color:#ffd754; 
-    }
-    .info-data{
-        display:block;
-        width:50%;
-        text-align: center;
-        background: #ffd754;
-        padding:5px;
-    } 
-}
-@media (max-width: 580px){ 
-    .info-title{     
-        padding:10px;
-        width:24%;
-        font-size:28px;
-        line-height:31px;
-        font-weight: bold;
-        margin: 10px 30px; 
-        color:#ffd754; 
-    }
-}
-
+ 
 /* Slider Style */
 .slider-container{  
     background:#222;
@@ -338,6 +224,7 @@ html, body {
     align-items: center;
     justify-content:center;
     position:relative;
+    padding: 20px;
 }
 .swiper{
     width:80%;
@@ -395,6 +282,67 @@ html, body {
     text-align: center;
     text-transform: uppercase;
 }
+/* Top Container */
+.top-container{ 
+    margin: 6rem 2rem; 
+    display:grid;
+    grid-gap: 20px ;
+    grid-template-areas: 
+        'showcase showcase top-box-a'
+        'showcase showcase top-box-b';
+}
+/* Showcase */
+.showcase{
+    grid-area:showcase;
+    min-height: 400px;
+    background:url(images/bg_repair.jpg);
+    background-size:cover ;
+    background-position: center;
+    padding:3rem;
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content:center;
+    box-shadow: 0 1px 5px rgba(104,104,104,0.8);
+}
+.showcase h1{
+    font-size:4rem;
+    margin-bottom:0;
+    color:#fff;
+}
+.showcase p{
+    font-size:1.3rem;
+    margin-top:0;
+    margin-bottom: 1rem;
+    color:#fff;
+}
+/* Top Box */
+.top-box{
+    background:#ddd;
+    display:grid;
+    align-items: center;
+    justify-content:center;
+    box-shadow:0 1px 5px rgba(104,104,104,0.8);
+    padding:1.5rem;
+}
+.top-box .price{
+    font-size:2.5rem;
+}
+.top-box-a{
+    grid-area:top-box-a;
+}
+.top-box-b{
+    grid-area:top-box-b;
+}
+.link-btn{
+    background:#333;
+    color:#fff;
+    padding:0.6rem 1.3rem;
+    text-decoration: none;
+    border:0;
+    text-align: center;
+}
+
 
 .team{ 
     margin:75px;
@@ -404,8 +352,7 @@ html, body {
     font-size: 2.4em;
     text-align: left;
     margin-bottom: 0px;
-}
-
+} 
 .testimonial p:after{
     content:"";
     border-bottom: 3.4px solid #ffd754;
@@ -478,7 +425,15 @@ transform: scale(1.1);
         flex-direction: column;
     }
 }
-
+.vid-map{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+}
+.video-wrapper{
+    padding-bottom: 20px;
+}
 /* Contact form */
 .contact-form{
     background:#000000; 
@@ -606,5 +561,75 @@ transform: scale(1.1);
     }
     .direct-contact-container .contact-text {
         margin-left: 20px;
+    }
+}
+
+footer.site-footer { 
+    padding-top: 70px;
+    padding-right: 0px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+    background:black;
+}
+ 
+@media (min-width: 1200px){
+.f-container {
+    max-width: 1140px;
+}}
+@media (min-width: 992px){
+.f-container {
+    max-width: 960px;
+}}
+@media (min-width: 768px){
+.f-container {
+    max-width: 720px;
+}}
+@media (min-width: 576px){
+.f-container {
+    max-width: 540px;
+}}
+.f-container {
+    width: 100%;
+    margin:0 auto;
+    display:flex;
+    padding-left: 15px; 
+}
+.site-footer h5 {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 2px; 
+    padding-bottom:10px;
+}
+.f-container div{
+    color:#fff;
+    width:100%;
+}
+.f-row { 
+    display: flex;  
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.site-footer .widget {
+    margin-bottom: 15px;
+    max-width: 100%; height: auto;
+}
+.f-col{
+    margin-right:10px;
+}
+.textwidget{
+    margin-right:20px;
+}
+.textwidget i{
+    padding-right: 10px;
+}
+@media screen and (max-width:480px){ 
+    .site-footer div{
+        display:block; 
+        text-align: center;
+    }
+    .textwidget{
+        margin-bottom:20px;
     }
 }
