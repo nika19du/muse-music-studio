@@ -309,7 +309,9 @@ html, body {
         display:grid;
         grid-template-areas:
         'showcase showcase'
-        'top-box-a top-box-b'
+        'top-box-a top-box-a'
+        'top-box-b top-box-b'
+
     }
     .showcase h1{
         font-size:2.5rem;
