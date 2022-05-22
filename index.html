@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MUSE | Music Studio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/l.ico" >
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.2/font/bootstrap-icons.min.css"> 
@@ -24,7 +25,7 @@
   <body>
     <header class="site-header"> 
     <nav class="menu">
-      <a>
+      <a href="#home">
       <img src="images/logo(1).png" alt="logo" class="logo">
     </a>   
     <div class="menu-toggle" id="mobile-menu">
@@ -33,17 +34,17 @@
       <span class="bar"></span>
     </div>
       <ul class="nav-menu">   
-          <li class="nav-links"><a href="#studios">Studios</a></li>
           <li class="nav-links"><a href="#recording">Recording</a></li>
+          <li class="nav-links"><a href="#studios">Studios</a></li>
           <li class="nav-links"> <a href="#rates">Rates</a></li>
           <li class="nav-links"> <a href="#events">Events</a></li>
           <li class="nav-links"><a href="#shop">Shop</a></li>
           <li class="nav-links"><a href="#blog">Blog</a></li>
           <li class="nav-links"><a href="#contact">Contact</a></li>
 
-          <li>
+          <li class="nav-links">
             <a href="#cart" title="View your shopping cart">
-              <div class="shopping-ico nav-links">
+              <div class="shopping-ico">
                 <i class="bi bi-bag-heart"></i>
                 <span class="count">$0</span>
               </div>
@@ -52,53 +53,53 @@
         </ul> 
       </nav> 
     </header>
-    <section class="home">
+    <section class="home" id="home">
       <div class="text-block">
         <div class="title">
-          <h1>NYC's Premier<br />Music Studios Since 1983</h1>
+          <h1 class="animate-hero">NYC's Premier<br />Music Studios Since 1983</h1>
         </div>
         <div class="subtitle">
-          <p>Are you ready for a great experience?</p>
+          <p class="animate-hero" >Are you ready for a great experience?</p>
         </div>
       </div>
       <div class="btn-bg">
-        <button class="btn">CHEACK OUT OUR STUDIOS</button>
+        <button class="btn animate-hero">CHEACK OUT OUR STUDIOS</button>
       </div>
     </section>
 
-    <section class="services">  
+    <section class="services animate-box" id="recording">  
           <div class="mini-box"> 
-             <i class="fa fa-microphone fa-4x"></i> 
-            <h3 class="mini-box-title">Audio Recording</h3>
-            <p class="mini-box-content">Lorem ipsum</p> 
+             <i class="fa fa-microphone fa-4x "></i> 
+            <h3 class="mini-box-title ">Audio Recording</h3>
+            <p class="mini-box-content ">Lorem ipsum</p> 
           </div> 
-            <div class="mini-box"><i class="fa-light fa-waveform-lines"></i>
-              <i class="fa-solid fa-sliders fa-4x"></i>
-              <h3 class="mini-box-title">Muse Studios</h3>
-              <p class="mini-box-content">Lorem ipsum</p> 
+            <div class="mini-box "> 
+              <i class="fa-solid fa-sliders fa-4x "></i>
+              <h3 class="mini-box-title ">Muse Studios</h3>
+              <p class="mini-box-content ">Lorem ipsum</p> 
             </div>
-            <div class="mini-box">
+            <div class="mini-box ">
               <i class="fa-solid fa-headphones fa-4x"></i>
-              <h3 class="mini-box-title">Equipment Hire</h3>
-              <p class="mini-box-content">Lorem ipsum</p> 
+              <h3 class="mini-box-title ">Equipment Hire</h3>
+              <p class="mini-box-content ">Lorem ipsum</p> 
              </div>
-            <div class="mini-box">
+            <div class="mini-box ">
                <i class="fa-solid fa-guitar fa-4x"></i>
-               <h3 class="mini-box-title">Instrument Repair</h3>
-              <p class="mini-box-content">Lorem ipsum</p> 
+               <h3 class="mini-box-title ">Instrument Repair</h3>
+              <p class="mini-box-content ">Lorem ipsum</p> 
             </div>
-            <div class="mini-box">
+            <div class="mini-box ">
               <i class="fa-brands fa-studiovinari fa-4x"></i>
-               <h3 class="mini-box-title">Space for Events</h3>
+               <h3 class="mini-box-title ">Space for Events</h3>
                <p class="mini-box-content">Lorem ipsum</p> 
             </div> 
-            <div class="mini-box">
+            <div class="mini-box ">
                 <i class="fa-brands fa-soundcloud fa-4x"></i>
-                <h3 class="mini-box-title event-space">Space for Events</h3>
-                <p class="mini-box-content">Lorem ipsum</p> 
+                <h3 class="mini-box-title ">Space for Events</h3>
+                <p class="mini-box-content ">Lorem ipsum</p> 
             </div>  
     </section>  
-    <section class="slider-container">
+    <section class="slider-container" id="studios">
       <div class="swiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -122,8 +123,8 @@
               <h3>Studio 5</h3>
             </div>
             <div class="swiper-slide">
-              <img src="images/event-space.jpg" alt="event space">
-              <h3>Event Space</h3>
+              <img src="images/event-space.jpg"  alt="event space">
+              <h3 class="event-space">Event Space</h3>
             </div>
             ...
         </div>
@@ -136,7 +137,7 @@
       </div> 
     </section>
 
-    <section class="row">
+    <section class="row" id="rates">
       <div class="row-container">
         <div class="box">
           <span class="counterup">7</span>
@@ -157,22 +158,22 @@
       </div>
     </section> 
 
-    <section class="top-container">
-      <div class="showcase">
+    <section class="top-container" id="events">
+      <div class="showcase animate-card">
         <h1>Rock & Roll</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Deleniti eos distinctio reiciendis ullam possimus quidem repudiandae.</p>
         <a href="#" class="link-btn">Read More</a>
       </div>
-      <aside class="top-box top-box-a">
+      <aside class="top-box top-box-a animate-top-box">
         <h4>Membership</h4>
           <p class="price">$199/mo</p>
           <a href="#" class="link-btn">Buy Now</a>
       </aside>
-      <div class="top-box top-box-b">
+      <aside class="top-box top-box-b animate-top-box">
         <h4>Pro Membership</h4>
         <p class="price">$299/mo</p>
         <a href="" class="link-btn">Buy Now</a>
-      </div>
+      </aside>
     </section>
      
     <section class="team">
@@ -243,7 +244,7 @@
       </div>
     </section>
 
-    <h2 class="contact-header">Stay Updated</h2>    
+    <h2  class="contact-header">Stay Updated</h2>    
     <section id="contact" class="contact-form">
       <div class="contact-wrapper">
         <form action="" id="contact-form" class="form-horizontal" role="form">
@@ -322,6 +323,8 @@
       </div>
     </footer>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
 
   </body>

@@ -21,7 +21,7 @@ html, body {
     width:100%;
     border: 1px solid #fff;
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
-    z-index: 999;
+    z-index: 9999;
 }
 .menu ul{
     display:flex;
@@ -58,7 +58,7 @@ html, body {
 /* DO med q for navbar */ 
 @media screen and (max-width:940px){
     .menu{
-        position:relative;  
+        position:relative;   
     }
     .nav-menu{ 
         display:flex;
@@ -104,11 +104,12 @@ html, body {
         position:absolute;
         margin-top:30px;
         right:5%;
-        transform: translateY(5%,20%);
+        transform: translateY(5%,20%); 
     } 
     .menu-toggle .bar{
         display:block;
         cursor: pointer;
+        
     } 
     .menu-toggle:hover{
         cursor: pointer;
@@ -160,8 +161,9 @@ html, body {
 .services{
     /* display:grid;
     grid-template-columns: repeat(6,1fr);
-      */
-    display:grid; margin:80px;
+      */ 
+    display:grid;
+    margin:80px;
     grid-gap:20px;
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
 }
@@ -195,27 +197,7 @@ html, body {
     letter-spacing: 1px;
     text-transform: uppercase;
 } 
-    @media(max-width:700px){ /*affect only 700px and less*/
-        .top-container{
-            grid-template-areas:
-            'showcase showcase'
-            'top-box-a top-box-b'
-        }
-        .showcase h1{
-            font-size:2.5rem;
-        }
-        .main-nav ul{
-            grid-template-columns: 1fr;
-        }
-        .info{
-            grid-template-columns: 1fr;
-        }
-        .info .btn{
-            display:block;
-            text-align:center;
-            margin:auto;
-        }
-    }
+   
  
 /* Slider Style */
 .slider-container{  
@@ -248,9 +230,14 @@ html, body {
     top:45%;
     color:white; 
 }
-.event-space{
-    color:#000000; 
+.swiper-slide .event-space{  
+    background:#000000;
 } 
+@media screen and (max-width:560px){
+    .swiper-slide h3{
+        font-size:1.7rem; 
+    }
+}
 .row{
     background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), transparent url(images/bg-funfact.jpg) center center/cover no-repeat fixed;
     padding-top: 75px;
@@ -315,6 +302,32 @@ html, body {
     margin-top:0;
     margin-bottom: 1rem;
     color:#fff;
+}
+
+@media only screen and (max-width:560px) {
+    .top-container{
+        display:grid;
+        grid-template-areas:
+        'showcase showcase'
+        'top-box-a top-box-b'
+    }
+    .showcase h1{
+        font-size:2.5rem;
+    }
+    .main-nav ul{
+        grid-template-columns: 1fr;
+    }
+    .info{
+        grid-template-columns: 1fr;
+    }
+    .info .btn{
+        display:block;
+        text-align:center;
+        margin:auto;
+    }
+    .top-box{
+        display: 80%;
+    }
 }
 /* Top Box */
 .top-box{
