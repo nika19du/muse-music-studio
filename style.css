@@ -567,7 +567,7 @@ html, body {
         display:flex;
         justify-content: center;
         margin:0 auto;
-        padding:1rem;
+        padding-left: 2.5rem
     }
 }
 @media(max-width:650px){
