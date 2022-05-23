@@ -374,12 +374,25 @@ html, body {
     display:block;
     width:40%;
     opacity:0.5;  
+    cursor: pointer;
+} 
+.testimonial p:hover::after{
+    content:"";
+    border-bottom: 3.4px solid #ffd754;
+    display:block;
+    width:40%; 
+    opacity:0.5;  
+    transform: translateY(-650%);
+    transition: 0.5s;
+    
+
 } 
 .testimonial p{
     margin-top:5px;
     margin-bottom: 10px;
     color: #b4b4b4;
-    text-align: left; 
+    text-align: left;
+    cursor: pointer; 
 } 
 .team-subtitle{
     margin-top:5px;
@@ -413,12 +426,7 @@ html, body {
     border:1px solid transparent;
     width:75%;
     cursor:pointer;
-}  
-.testimonial img:hover{
-    /*  Equal to scaleX(0.7) scaleY(0.7) */
-    
-transform: scale(1.1);
-}
+}   
 .testimonial span i{
     color: #b4b4b4;
     cursor: pointer;
@@ -550,10 +558,16 @@ transform: scale(1.1);
         width: 100%; 
     }
     .contact-icon{
-        padding:5px;
+        /* padding:5px; */
         font-size: 2.4rem;
         color:white;
-        margin-left: 2px;
+        /* margin-left: 2px; */
+    }
+    .social-media-list{
+        display:flex;
+        justify-content: center;
+        margin:0 auto;
+        padding:1rem;
     }
 }
 @media(max-width:650px){
@@ -568,6 +582,10 @@ transform: scale(1.1);
     .form-horizontal{
         display:flex;
         flex-direction: column;
+        justify-content:center;
+        text-align:center;
+        align-items:center;
+        margin:0 auto;
     }
     .form-control{
         width:80%;
@@ -588,7 +606,10 @@ transform: scale(1.1);
         color:#ffd754;
     }
     .contact-wrapper{
-        width: 100%; 
+        /* width: 100%;  */
+        margin:0 auto;
+        padding-top: 30px;
+        padding-left:20px;
     }
     .direct-contact-container .contact-text {
         margin-left: 20px;
