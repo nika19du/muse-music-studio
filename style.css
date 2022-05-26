@@ -551,7 +551,6 @@ html, body {
     margin:20px;
     text-align: center;
 } 
-/* TO DO: RESPONSIVE CONTACT FORM  :// very sadd ?*/
 @media(max-width:840px){
     .contact-form{
         display:flex;
