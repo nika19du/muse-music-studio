@@ -679,7 +679,8 @@ footer.site-footer {
 }
 .site-footer .widget {
     margin-bottom: 15px;
-    max-width: 100%; height: auto;
+    max-width: 100%;
+    height: auto;
 }
 .f-col{
     margin-right:10px;
@@ -691,7 +692,7 @@ footer.site-footer {
     margin-bottom:10px;
 }
 .textwidget i{
-    padding-right: 10px;
+    padding-right: 5px;
 }
 @media screen and (max-width:480px){  
     .site-footer div{
